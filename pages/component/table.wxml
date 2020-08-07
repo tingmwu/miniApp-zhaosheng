@@ -1,0 +1,61 @@
+<!--pages/component/table.wxml-->
+ 
+ 
+<template name="scoreTemp">
+    <scroll-view class="table-wrap" scroll-x="{{true}}">
+<view>
+    <view class="table center">
+        <!-- <view class="tr">
+            <block wx:for="{{title}}" wx:key="index">
+            <view class="th left">{{item}}</view>
+            </block>
+
+        </view> -->
+        <view class="tr root bg-w" wx:for="{{contentItem}}" wx:key="index">
+            <!-- <block wx:for="{{item}}" wx:key="index"> -->
+                <view class="td center">{{item.year}}</view>
+                <view class="td center">{{item.city}}</view>
+                <view class="td center">{{item.specialty}}</view>
+                <view class="td center">{{item.min}}</view>
+                <view class="td center">{{item.rank}}</view>
+                <!-- <view class="td center">{{item.max}}</view> -->
+                <!-- <block wx:for="{{item.score}}" wx:key="score">
+                    <view class="td left">{{item}}</view>
+                </block> -->
+            <!-- </block> -->
+ 
+<!--            <view class="td td2 left"><text class="item_value_font_color">{{item.feedMateriel1}}</text></view>-->
+        </view>
+    </view>
+</view>
+    </scroll-view>
+</template>
+
+<template name="OddsTemp">
+    <scroll-view class="table-wrap" scroll-x="{{true}}">
+<view>
+    <view class="table center">
+        <!-- <view class="tr">
+            <block wx:for="{{title}}" wx:key="index">
+            <view class="th left">{{item}}</view>
+            </block>
+
+        </view> -->
+        <view class="tr root bg-w" wx:for="{{contentItem}}" wx:key="index">
+            <!-- <block wx:for="{{item}}" wx:key="index"> -->
+                
+                <view class="td center">{{item.specialty}}</view>
+                <view class="td center">{{item.Odds}}</view>
+                
+                <!-- <view class="td center">{{item.max}}</view> -->
+                <!-- <block wx:for="{{item.score}}" wx:key="score">
+                    <view class="td left">{{item}}</view>
+                </block> -->
+            <!-- </block> -->
+ 
+<!--            <view class="td td2 left"><text class="item_value_font_color">{{item.feedMateriel1}}</text></view>-->
+        </view>
+    </view>
+</view>
+    </scroll-view>
+</template>

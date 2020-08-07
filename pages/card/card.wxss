@@ -1,0 +1,4 @@
+.test{
+	height: fit-content;
+	text-align: left;
+}

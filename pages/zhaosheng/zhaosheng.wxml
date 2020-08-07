@@ -1,0 +1,98 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{false}}">
+	<view slot="content">西安电子科技大学</view>
+</cu-custom>
+
+<swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+  <block wx:for="{{banners}}" wx:key="id">
+    <swiper-item>
+      <image class="banner_image" src="{{item.img}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="audio">
+  <video src="{{src}}"   controls style="width:100%"></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">西安电子科技大学年招生宣传片</button>
+  </view>
+</view>
+
+<view class="cu-card dynamic {{isCard?'no-card':''}}" style="height: fit-content">
+
+  <view class="cu-item shadow" >
+    <view class="cu-list menu-avatar">
+      <!-- <view class="cu-item"> -->
+        <!-- <view class="cu-avatar round lg" style="background-image:url(cloud://wechat-0tped.7765-wechat-0tped-1302742318/logo.png);"></view> -->
+        <!-- <view class="content flex-sub"> -->
+          <view class="text-grey" style="text-align: center; font-size:40rpx">关于西电</view>
+          <!-- <view class="text-gray text-sm flex justify-between">
+            2019年12月3日
+          </view> -->
+        <!-- </view> -->
+      </view>
+    <!-- </view> -->
+
+    <view style="height: 100%" class="content left-indent"  >
+      西安电子科技大学是以信息与电子学科为主，工、理、管、文多学科协调发展的全国重点大学，
+      直属教育部，是国家“双一流” 建设高校之一，以及“优势学科创新平台”项目和“211工程”项目重点建设高校之一、
+      国家双创示范基地之一、首批35所示范性软件学院、首批9所示范性微电子学院、
+      首批9所获批设立集成电路人才培养基地和首批一流网络安全学院建设示范项目的高校之一。
+      2017年学校信息与通信工程、计算机科学与技术入选国家“双一流”建设学科。
+    </view>
+    
+    <view  class="grid flex-sub padding-lr {{isCard?'col-3 grid-square':'col-1'}}">
+      <image class="bg-img" src="cloud://wechat-0tped.7765-wechat-0tped-1302742318/640.jpg"></image>
+    </view>
+    
+
+    <!-- <view class="cu-list menu-avatar comment solids-top" style="text-align: left"> -->
+      <view class="cu-item">
+        <view class="content posit">
+          <view style="color: #f2f2f2; font-size: 40rpx" class="text-grey bg-gradual-red">9+3大类招生专业解读</view>
+          <view class="text-gray text-content text-df bg-grey.light">
+            2020年西安电子科技大学面向全国实行按专业大类招生，以通识教育和专业基础教育为核心，
+            实施学生大类培养，提升学生社会责任感、创新精神和实践能力。目前已形成“9+3”的大类招生格局。
+          </view>
+          <view class="posit">
+          <view class="bg-grey">
+            <view class="flex">
+              <view class="medium-size">9个大类：</view>
+              <view class="flex-sub small-size">电子信息类、计算机类、
+              自动化类（智能制造及智能测控）、管理科学与工程类（综合大类培养）、
+              中国语言文学类、外国语言文学类、数学类、生物医学工程类（电子信息交叉融合班）
+              和材料类（电子信息材料及微纳器件），3个专业分别是：录音艺术（艺术类）、
+              电子信息工程（中外合作办学）和通信工程（中外合作办学）。</view>
+            </view>
+            <view style="padding-top: 10rpx" class="flex">
+              <view class="meidum-size">3个专业：</view>
+              <view class="flex-sub small-size">录音艺术（艺术类）、
+              电子信息工程（中外合作办学）和通信工程（中外合作办学）。</view>
+            </view>
+            
+          </view>
+          </view>
+        </view>
+      </view>
+      <view  class="grid flex-sub padding-lr {{isCard?'col-3 grid-square':'col-1'}}">
+        <image mode="widthFix" style="padding: 10rpx" class="bg-img" src="cloud://wechat-0tped.7765-wechat-0tped-1302742318/06.png"></image>
+      </view>
+      
+      
+    <!-- </view> -->
+  </view>
+</view>
+
+  
+
+    
+
+<view class="footer">
+  <!-- <view class="contact">联系方式</view> -->
+  <view class="contact">北校区地址：西安市太白南路2号 邮编：710071</view>
+  <view class="contact">南校区地址：西安市西沣路兴隆段266号 邮编：710126</view>
+  <view class="contact">招生咨询电话：（029）88202335</view>
+  <view class="contact">E-mail：zsb@mail.xidian.edu.cn</view>
+</view>
+
+
+

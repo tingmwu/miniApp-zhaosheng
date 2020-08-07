@@ -1,0 +1,70 @@
+<!--pages/gailv/gailv.wxml-->
+<import src="../component/table.wxml"/>
+
+
+<cu-custom bgColor="bg-gradual-pink" isBack="{{false}}">
+	<view slot="content">西安电子科技大学</view>
+</cu-custom>
+
+
+
+<form>
+	
+	<view class="cu-form-group">
+		<view class="title">省份</view>
+		<picker bindchange="PickerChange" value="{{city}}" range="{{picker}}">
+			<view class="picker">
+				{{city?picker[city]:'请选择所在省份'}}
+			</view>
+		</picker>
+	</view>
+
+	<view class="cu-form-group">
+		<view class="title">文理科</view>
+		<picker bindchange="PickerItemChange" value="{{branch}}" range="{{picker_item}}">
+			<view class="picker">
+				{{branch?picker_item[branch]:'文科， 理科'}}
+			</view>
+		</picker>
+	</view>
+
+	<view  class="cu-form-group">
+		<view class="title">高考分数</view>
+		<input bindinput="input" placeholder="输入分数"></input>
+		<button bindtap="commit" class="cu-btn bg-green shadow">提交</button>
+	</view>
+
+<!-- <view class="cu-bar bg-white margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 普通窗口
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="Modal">Modal</button>
+  </view>
+</view> -->
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content"></view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+     {{modalContent}}
+    </view>
+  </view>
+</view>
+
+</form>
+
+<view hidden="{{titleShow}}">
+	<w-drop-menu  style="align-left: 20rpx" options="{{  options  }}" bind:onChange="handleChange">
+
+	</w-drop-menu>
+	<view>
+
+			<template is="OddsTemp" data="{{...judgeOdds}}"/>
+	</view>	
+</view>
+

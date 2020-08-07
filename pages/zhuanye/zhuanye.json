@@ -1,0 +1,6 @@
+{
+	"usingComponents": {
+		"w-drop-menu": "wuss-weapp/w-drop-menu/index",
+		"van-sticky": "@vant/weapp/sticky/index"
+	}
+  }

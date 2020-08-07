@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/zhaosheng/zhaosheng",
+    "pages/zhuanye/zhuanye",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/component/table",
+    "pages/card/card",
+    "pages/gailv/gailv"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#444",
+    "navigationBarTitleText": "西安电子科技大学",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom":"/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1afa29",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/zhaosheng/zhaosheng",
+        "iconPath": "image/zhaosheng.png",
+        "selectedIconPath": "image/zhaosheng_active.png",
+        "text": "招生简章"
+      },
+      {
+        "pagePath": "pages/zhuanye/zhuanye",
+        "iconPath": "image/zhuanye.png",
+        "selectedIconPath": "image/zhuanye_active.png",
+        "text": "学院专业"
+      },
+      {
+        "pagePath": "pages/gailv/gailv",
+        "iconPath": "image/zhuanye.png",
+        "selectedIconPath": "image/zhuanye_active.png",
+        "text": "录取概率"
+      }
+      
+      
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

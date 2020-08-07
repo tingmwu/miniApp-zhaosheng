@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "w-drop-menu": "wuss-weapp/w-drop-menu/index"
+  }
+}
